@@ -1,13 +1,18 @@
-"""Площадь круга и длина окружности по радиусу."""
+"""Модуль для простых вычислений, связанных с кругом.
+
+Функции:
+- area(radius): возвращает площадь круга
+- perimeter(radius): возвращает длину окружности
+"""
 
 from math import pi
 
 
 def area(radius: float) -> float:
-    """Вернуть площадь круга."""
-    return 2 * pi * radius**2
+    """Площадь круга: π * r^2"""
+    return pi * radius**2
 
 
 def perimeter(radius: float) -> float:
-    """Вернуть длину окружности."""
-    return pi * radius
+    """Длина окружности (периметр): 2 * π * r"""
+    return 2 * pi * radius
