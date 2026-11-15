@@ -1,13 +1,18 @@
-"""Площадь круга и длина окружности по радиусу."""
+"""Модуль geolib.circle
+
+Функции:
+- area(radius): возвращает площадь круга
+- perimeter(radius): возвращает длину окружности
+"""
 
 from math import pi
 
 
 def area(radius: float) -> float:
-    """Вернуть площадь круга."""
-    return 2 * pi * radius**2
+    """Возвращает площадь круга: pi * r^2"""
+    return pi * radius**2
 
 
 def perimeter(radius: float) -> float:
-    """Вернуть длину окружности."""
-    return pi * radius
+    """Возвращает длину окружности: 2 * pi * r"""
+    return 2 * pi * radius
