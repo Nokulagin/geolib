@@ -1,13 +1,17 @@
-"""Площадь круга и длина окружности по радиусу."""
-
 from math import pi
 
 
 def area(radius: float) -> float:
-    """Вернуть площадь круга."""
-    return 2 * pi * radius**2
+    """Return the area of a circle with the given radius.
+
+    Formula: area = pi * radius**2
+    """
+    return pi * radius ** 2
 
 
 def perimeter(radius: float) -> float:
-    """Вернуть длину окружности."""
-    return pi * radius
+    """Return the circumference (perimeter) of a circle with the given radius.
+
+    Formula: perimeter = 2 * pi * radius
+    """
+    return 2 * pi * radius
